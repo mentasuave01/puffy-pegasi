@@ -1,6 +1,4 @@
----
-import '../global.css'
----
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -9,10 +7,18 @@ import '../global.css'
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Static and Dynamic Page Examples</h1>
-		<a href="static">Static</a>
-		<a href="dynamic">Dynamic</a>
+	<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex items-center justify-center">
+		<div class="bg-white shadow-lg rounded-lg p-10 max-w-xl w-full text-center">
+			<h1 class="text-4xl font-bold mb-8 text-blue-600">Static and Dynamic Page Examples</h1>
+			<div class="flex justify-center space-x-6">
+				<a href="static" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">
+					Static Page
+				</a>
+				<a href="dynamic" class="bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-600 transition duration-300">
+					Dynamic Page
+				</a>
+			</div>
+		</div>
 	</body>
 </html>
 
