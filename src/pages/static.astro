@@ -1,6 +1,8 @@
 ---
 import '../global.css'
+const data = Math.random();
 ---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -10,10 +12,10 @@ import '../global.css'
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Static and Dynamic Page Examples</h1>
-		<a href="static">Static</a>
+		<h1>Static Example</h1>
+		<a href="/">Home</a>
 		<a href="dynamic">Dynamic</a>
+        <p>{data}</p>
 	</body>
 </html>
 
-		
